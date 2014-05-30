@@ -4,6 +4,10 @@ apply plugin: 'eclipse'
 version = '0.14'
 description = 'ApprovalTests for Java'
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.8'
+}
+
 repositories {
 	mavenCentral()
 }
